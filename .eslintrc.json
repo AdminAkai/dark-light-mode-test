@@ -34,7 +34,7 @@
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "react/display-name": "off",
-    "jsx-quotes": "error",
+    "jsx-quotes": ["error", "prefer-single"],
     "semi": ["error", "never"]
   }
 }
