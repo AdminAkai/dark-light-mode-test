@@ -1,9 +1,11 @@
 import { FC, useState } from "react";
-import "./Switch.css";
+
 import { useAppDispatch, useAppSelector } from 'src/redux/store';
 import { selectMode } from 'src/redux/features/settingsSlice/selectors';
 import { Mode } from 'src/redux/features/settingsSlice/initialState';
 import { setMode } from 'src/redux/features/settingsSlice';
+
+import "./switch.css";
 
 const Switch: FC = () => {
   const dispatch = useAppDispatch()
