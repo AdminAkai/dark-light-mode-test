@@ -1,6 +1,6 @@
-export enum Mode { 
-  DARK = "DARK", 
-  LIGHT = "LIGHT" 
+export enum Mode {
+  DARK = 'DARK',
+  LIGHT = 'LIGHT',
 }
 
 interface ISettingsInitialState {
@@ -8,7 +8,7 @@ interface ISettingsInitialState {
 }
 
 const initialState: ISettingsInitialState = {
-  mode: Mode.DARK
+  mode: Mode.DARK,
 }
 
-export default initialState;
+export default initialState

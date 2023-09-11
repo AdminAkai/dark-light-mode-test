@@ -1,12 +1,12 @@
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components'
 
-import Landing from 'src/containers/Landing/Landing';
+import Landing from 'src/containers/Landing/Landing'
 
-import { Mode } from 'src/redux/features/settingsSlice/initialState';
-import { selectMode } from 'src/redux/features/settingsSlice/selectors';
-import { useAppSelector } from 'src/redux/store';
+import { Mode } from 'src/redux/features/settingsSlice/initialState'
+import { selectMode } from 'src/redux/features/settingsSlice/selectors'
+import { useAppSelector } from 'src/redux/store'
 
-import { darkTheme, lightTheme } from 'src/theme';
+import { darkTheme, lightTheme } from 'src/theme'
 
 function App() {
   const mode = useAppSelector(selectMode)
@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <Landing />
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

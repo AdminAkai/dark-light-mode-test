@@ -1,1 +1,1 @@
-export { default as settingsSlice } from "./settingsSlice";
+export { default as settingsSlice } from './settingsSlice'

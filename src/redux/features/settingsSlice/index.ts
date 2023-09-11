@@ -1,20 +1,18 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
-import initialState, { Mode } from "./initialState";
+import initialState, { Mode } from './initialState'
 
 // Slice
 const settingsSlice = createSlice({
-  name: "settings",
+  name: 'settings',
   initialState,
   reducers: {
     setMode: (state, { payload }: PayloadAction<Mode>) => {
-      state.mode = payload;
-    }
-  }
-});
+      state.mode = payload
+    },
+  },
+})
 
-export const {
-  setMode
-} = settingsSlice.actions;
+export const { setMode } = settingsSlice.actions
 
-export default settingsSlice.reducer;
+export default settingsSlice.reducer
